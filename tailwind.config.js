@@ -9,8 +9,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary" :  "#f254f6",
-        "secondary" : "#fc83cc",
+        primary :  "#f254f6",
+        secondary : "#fc83cc",
+        contact : "#271f22",
       },
       fontFamily: {
         outfit : ['var(--font-outfit)', ...fontFamily.sans]
