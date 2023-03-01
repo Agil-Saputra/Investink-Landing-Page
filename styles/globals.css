@@ -7,30 +7,32 @@
 }
 
 .paraf{
-  @apply text-slate-600 leading-[2rem]
+  @apply text-slate-600 leading-[2rem] font-outfit
+}
+
+.h2{
+  @apply text-5xl font-bold leading-[4rem]
+}
+
+.h3{
+  @apply text-4xl font-bold 
 }
 
 .flex-center{
   @apply flex items-center 
 }
 
-.gradient-bg::after{
-  content: "";
-  height: 100%;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,9,219,0.1195071778711485) 0%, rgba(255,255,255,0) 69%);
-  position: absolute;
-  top: 20;
-  right: 0;
-  z-index: -10;
-  @apply w-full md:w-[50%]
+.gradient-bg {
+  @apply relative
 }
 
 .gradient-bg::before{
   content: "";
-  height: 100%;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,9,219,0.1195071778711485) 0%, rgba(255,255,255,0) 69%);
+  height: 90%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,9,219,0.1195071778711485) 0%, rgba(255,255,255,0)53%);
   position: absolute;
   left: 0;
-  z-index: -10;
-  @apply w-full md:w-[50%] md:top-0 top-[50]
-}
+  top: -10;
+  z-index: 0;
+  @apply w-full lg:w-[50%]
+} 

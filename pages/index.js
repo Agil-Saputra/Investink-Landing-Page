@@ -20,14 +20,16 @@ export async function getStaticProps(type){
   // make variables for each content-model to passing props
   const hero = await client.getEntries({content_type:"hero"})
   const features = await client.getEntries({content_type:"features"})
-  const list = await client.getEntries({content_type:"list"})
+  const saving = await client.getEntries({content_type:"savings"})
+  const contact = await client.getEntries({content_type:"contact"})
 
   // passing props for each content-model response
   return {
     props : {
     features: features.items,
     hero: hero.items,
-    lists: list.items,
+    savings: saving.items,
+    contacts: contact.items,
     }
     }
   }
@@ -36,21 +38,27 @@ export async function getStaticProps(type){
 import Navbar from '@/components/header/navbar'
 import Hero from "@/components/hero/hero"
 import Features from "@/components/features/features"
+import Savings from "@/components/savings/savings"
+import Contact from "@/components/contact/contact"
+import Subs from "@/components/subscribing/subs"
 
 
-export default function Home({hero, features, lists}) {
+export default function Home({hero, features, savings, contacts}) {
   return (
     <>
       <Head>
       <title>Investink</title> 
         <meta name="description" content="Investink is the best invest platform in the planet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg"/>
+        <link rel="shortcut icon" href="/favicon.svg"/>
       </Head>
       <main className={`${outfit.variable} font-sans`}>
      <Navbar/>
      <Hero data={hero}/>
      <Features data={features}/>
+     <Savings data={savings}/>
+     <Contact data={contacts}/>
+     <Subs data={contacts}/>
       </main>
     </>
   )

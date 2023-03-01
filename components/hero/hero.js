@@ -9,8 +9,8 @@ export default function hero({data}) {
     const {title, desc, image} = data[0].fields
 
   return (
-    <section className='font-outfit md:ml-24 flex-center max-md:flex-col justify-between gradient-bg'>
-    <div className="max-md:m-4">
+    <section className='font-outfit md:ml-24 flex items-end lg:items-center max-lg:flex-col justify-between'>
+    <div className="max-md:m-4 gradient-bg max-lg:self-start">
      <div className='flex-center gap-2 mb-8'>
       <p className='py-[8px] px-[14px] font-medium bg-slate-200 rounded-[17px]'>Coming Soon</p>
       <p className='paraf'>Investink will have mobile app soon!</p>
@@ -30,12 +30,13 @@ export default function hero({data}) {
      </div>
     </div>
 
-    <div className="max-w-[]">
+    <div className="gradient-bg">
    <Image 
     src={"https:" + image.fields.file.url}
     width={683}
     height={710}
     alt={image.fields.title}
+    priority={true}
    />
     </div>
     </section>
