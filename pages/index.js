@@ -41,6 +41,8 @@ import Features from "@/components/features/features"
 import Savings from "@/components/savings/savings"
 import Contact from "@/components/contact/contact"
 import Subs from "@/components/subscribing/subs"
+import Footer from "@/components/footer/footer"
+import Copyright from "@/components/footer/copyright"
 
 
 export default function Home({hero, features, savings, contacts}) {
@@ -53,13 +55,16 @@ export default function Home({hero, features, savings, contacts}) {
         <link rel="shortcut icon" href="/favicon.svg"/>
       </Head>
       <main className={`${outfit.variable} font-sans`}>
-     <Navbar/>
+    <Navbar/>
      <Hero data={hero}/>
      <Features data={features}/>
      <Savings data={savings}/>
      <Contact data={contacts}/>
      <Subs data={contacts}/>
+     <Footer data={contacts}/>
+     <Copyright/>
       </main>
+      <></>
     </>
   )
 }

@@ -19,7 +19,7 @@ export default function hero({data}) {
      <h1 className='text-6xl font-bold max-w-[20ch] leading-[5rem]'>{title}</h1>
      <p className='max-w-[48ch] paraf my-4'>{desc}</p>
 
-     <div className="flex-center gap-4">
+     <div className="flex-center gap-4 max-md:flex-col ">
         <Button link="" title="Discover Now"/>
         <LearnMore/>
      </div>
