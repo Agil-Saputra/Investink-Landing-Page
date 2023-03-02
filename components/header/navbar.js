@@ -2,8 +2,8 @@ import Image from "next/image"
 import logo from "../../icon/investink-logo.svg"
 import Button from "../ui/button"
 
-
 export default function navbar() {
+
 const menus = ["Home", "About", "Pricing", "Service", "Testimonials"]
 
   return (
@@ -17,12 +17,13 @@ const menus = ["Home", "About", "Pricing", "Service", "Testimonials"]
     />
     <nav className="flex-center gap-10 max-lg:hidden">
     {menus.map(menu => <a href="#" className="hover:text-slate-400 smooth" key={menu}>{menu}</a>)}
-        <div className="flex-center gap-8">
+      
+    </nav>
+
+    <div className="flex-center gap-8">
         <a href="#" className="hover:text-slate-400 smooth">Login</a>
         <Button link="#" title="Register"/>
     </div>
-    </nav>
-
    
     </header>
   )

@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+       'mlg' : "1166px"
+      },
       colors: {
         primary :  "#f254f6",
         secondary : "#fc83cc",
@@ -15,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         outfit : ['var(--font-outfit)', ...fontFamily.sans]
-      }
+      },
     },
   },
   plugins: [],
