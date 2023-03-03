@@ -3,7 +3,7 @@ import Button from "../ui/button";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 
-export default function form() {
+export default function Form() {
   const {
     register,
     handleSubmit,

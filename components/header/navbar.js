@@ -5,7 +5,7 @@ import Login from "./login"
 import { FaBars } from "react-icons/fa"
 import { GrClose } from "react-icons/gr"
 
-export default function navbar() {
+export default function Navbar() {
 const [showNav, setShowNav] = useState(false)
 const menus = ["Home", "About", "Pricing", "Service", "Testimonials"] 
 const setIcon = {
