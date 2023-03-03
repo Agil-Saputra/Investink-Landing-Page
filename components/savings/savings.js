@@ -6,7 +6,7 @@ export default function savings({data}) {
     const {title, desc, image, lists} = data[0].fields
 
   return (
-    <section className='font-outfit md:mr-24 flex items-end lg:items-center max-lg:flex-col-reverse lg:gap-20 mt-20'>
+    <section className='font-outfit md:mr-24 flex items-end lg:items-center max-lg:flex-col-reverse lg:gap-20 mt-20 justify-between'>
 
     <div className="max-lg:self-start gradient-bg">
    <Image 
@@ -23,7 +23,7 @@ export default function savings({data}) {
      <ul>
         {lists.map(list => {
             return (
-            <li key={list} className="flex-center gap-2 my-6">
+            <li key={list} className="flex-center gap-2 my-6 font-medium">
             <Image 
                 width={22}
                 height={22}

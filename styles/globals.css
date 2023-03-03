@@ -42,3 +42,7 @@
 .title{
   @apply font-medium text-[18px] font-outfit mb-8
 }
+
+.mobile-nav{
+@apply max-lg:absolute max-lg:flex-col top-0 left-0 text-center 
+}
