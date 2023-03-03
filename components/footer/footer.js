@@ -24,7 +24,7 @@ export default function footer({data}) {
         <Image
           src={logo}
           width={170}
-          height={35}
+          height={40}
           alt="Investink Logo"
           priority={true}
         />
