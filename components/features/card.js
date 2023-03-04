@@ -1,8 +1,9 @@
 import Image from "next/image"
+import { motion } from "framer-motion"
 
-export default function card({icon, title, desc}) {
+export default function card({icon, title, desc, variants}) {
   return (
-    <div className="grid place-items-center">
+    <motion.div className="grid place-items-center" variants={variants}>
     <Image
         src={"https:" + icon.url}
         width={icon.details.image.width}
@@ -12,6 +13,6 @@ export default function card({icon, title, desc}) {
     />
     <h2 className="h3 mb-6">{title}</h2>
     <p className="paraf w-[23ch]">{desc}</p>
-    </div>
+    </motion.div>
   )
 }
