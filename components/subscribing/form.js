@@ -50,7 +50,7 @@ export default function Form() {
 
       <button
         type="submit"
-        className="py-[10px] px-8 text-[18px] font-outfit text-white rounded-[26px] bg-gradient-to-r from-primary to-secondary"
+        className="py-[10px] px-8 text-[18px] font-outfit text-white rounded-[26px] bg-gradient-to-r from-primary to-secondary hover:bg-gradient-to-l z-10 transition-all ease-in-out duration-300 hover:shadow-md hover:shadow-primary"
       >
         Subscribe
       </button>
