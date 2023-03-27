@@ -1,38 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br/>
+<p align="center">
+  <a href="https://github.com/Agil-Saputra/Investink-Landing-Page">
+    <h3 align="center">Investink Landing Page</h3>
+  </a>
+
+  <p align="center">
+    An Awesome Landing Page with stunning UI, animation, and interactive components
+    <br/>
+    <br/>
+    <a href="https://investink.vercel.app">View Demo</a>
+    .
+    <a href="https://github.com/Agil-Saputra/Investink-Landing-Page/issues">Report Bug</a>
+  </p>
+</p>
+
+## Table Of Contents
+
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Roadmap](#roadmap)
+* [Authors](#authors)
+
+## About The Project
+
+![Screen Shot](https://user-images.githubusercontent.com/88566690/227916007-501347a8-404d-43c9-8ae9-092677f45495.png)
+
+This Landing Page is results from collaboration with my UI/UX designer to create engaging user interfaces and experience for people
+## Built With
+
+- Nextjs
+- React
+- Contentful CMS
+- React-Hook-Form
+- Tailwind CSS
+- Vercel
+
 
 ## Getting Started
 
-First, run the development server:
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Installation
+
+1.Clone the repo
+
+```sh
+git clone https://github.com/Agil-Saputra/Investink-Landing-Page.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Install NPM packages
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4. Running Development Server
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```sh
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## What I Learn
+In this project i learn :
+- how to make a layout using flexbox and grid css on tailwind
+- how to create a functional form with react-hook-form
+- how to handling error form
+- how to make a responsive website with tailwind breakpoints
+- how  to create animation with framer motion
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+See the [open issues](https://github.com/Agil-Saputra/Investink-Landing-Page/issues) for a list of proposed features (and known issues).
 
-## Deploy on Vercel
+## Authors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* **Agil Saputra** - [Agil](https://github.com/Agil-Saputra/agil-saputra) 
