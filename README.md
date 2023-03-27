@@ -28,7 +28,7 @@
 
 ![Screen Shot](https://user-images.githubusercontent.com/88566690/227916007-501347a8-404d-43c9-8ae9-092677f45495.png)
 
-This Landing Page is results from collaboration with my UI/UX designer to create engaging user interfaces and experience for people
+This Landing Page is results from collaboration with my [UI/UX designer](http://dribbble.com/raffialdo) to create engaging user interfaces and experience for people
 ## Built With
 
 - Nextjs
