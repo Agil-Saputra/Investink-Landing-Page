@@ -21,7 +21,7 @@ export default function footer({data}) {
   const {email, phoneNum} = data[0].fields
 
   return (
-    <motion.footer variants={item(0.5)} {...set} className="flex max-lg:flex-col gap-10 items-start justify-between mx-24 border-b-[1px] border-black py-10 mt-28">
+    <motion.footer {...set} variants={item(0.2)} className="flex max-lg:flex-col gap-10 items-start justify-between md:mx-24 mx-4  border-b-[1px] border-black py-10 md:mt-28 mt-8">
 
       <div>
         <Image

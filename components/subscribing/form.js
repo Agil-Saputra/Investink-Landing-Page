@@ -18,7 +18,7 @@ export default function Form() {
 
   return (
     <form
-      className={(errors?.email ? "ring-[1px] ring-red-500 ring-inset" : null)+ " flex-center justify-between bg-white rounded-[32.5px] p-2"}
+      className={(errors?.email ? "ring-[1px] ring-red-500 ring-inset" : null)+ " flex-center max-sm:flex-col justify-between bg-white sm:rounded-[32.5px] rounded-[10px] p-2"}
       onSubmit={handleSubmit(onSubmit)}
     >
       <input

@@ -11,11 +11,15 @@
 }
 
 .h2{
-  @apply text-5xl font-bold leading-[4rem]
+  @apply text-5xl font-bold leading-[4rem] max-md:text-4xl
 }
 
 .h3{
-  @apply text-4xl font-bold 
+  @apply text-4xl font-bold  max-md:text-3xl
+}
+
+.h4{
+  @apply text-4xl font-bold  max-md:text-2xl
 }
 
 .flex-center{
@@ -36,7 +40,7 @@
 }
 
 .subs-bg::before{
-  @apply bg-contact w-full h-[75%] -z-10 left-0 bottom-0 absolute content-[''] rounded-2xl
+  @apply bg-contact w-full md:h-[75%] h-[90%] -z-10 left-0 bottom-0 absolute content-[''] rounded-2xl
 }
 
 .title{

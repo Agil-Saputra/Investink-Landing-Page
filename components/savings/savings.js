@@ -20,9 +20,9 @@ export default function savings({data}) {
     </motion.div>
 
     <motion.div variants={container} {...set} className="max-md:m-4 md:max-w-[50ch]">
-     <motion.ah1 className='h2' variants={item(0.6)}>{title}</motion.ah1>
-     <motion.p variants={item(0.7)} className='max-w-[48ch] paraf my-4'>{desc}</motion.p>
-     <motion.ul variants={item(0.8)}>
+     <motion.ah1 className='h2' variants={item(0.1)}>{title}</motion.ah1>
+     <motion.p variants={item(0.2)} className='max-w-[48ch] paraf my-4'>{desc}</motion.p>
+     <motion.ul variants={item(0.3)}>
         {lists.map(list => {
             return (
             <li key={list} className="flex-center gap-2 my-6 font-medium">
