@@ -6,7 +6,6 @@ import { FaBars } from "react-icons/fa"
 import { GrClose } from "react-icons/gr"
 
 import { motion } from 'framer-motion';
-import { set, itemUp} from "@/utils/motion"
 
 export default function Navbar() {
 const [showNav, setShowNav] = useState(false)
@@ -26,16 +25,14 @@ function handleToggle() {
 }, [showNav]) 
 
   return (
-    <motion.header 
-    variants={itemUp(0.5)}
-    {...set}
-     className="flex-center gap-8 justify-between font-outfit md:px-24 px-4 py-10">
+    <header className="flex-center gap-8 justify-between font-outfit md:px-24 px-4 py-10">
     <Image
         src={logo}
         width={170}
         height={40}
         alt="Investink Logo"
         priority={true}
+        className="max-sm:w-[127.5px] max-sm:h-[30px]"
     />
 
     <nav className={(showNav ? "translate-y-0 max-lg:bg-secondary" : "max-lg:-translate-y-full") + " flex gap-8 items-center max-lg:bg-opacity-95 tracking-[1.2px] max-lg:fixed max-lg:flex-col top-0 right-0 max-lg:z-10 max-lg:w-full max-lg:h-full max-lg:justify-center max-lg:smooth"} onClick={handleToggle}>
@@ -47,6 +44,6 @@ function handleToggle() {
     <Login style={"lg:flex items-center gap-8 hidden"}/>
     {showNav ? <GrClose {...setIcon} /> : <FaBars {...setIcon} />}
     </div>
-    </motion.header>
+    </header>
   )
 }

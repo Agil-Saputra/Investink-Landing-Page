@@ -54,7 +54,7 @@ export default function Home({hero, features, savings, contacts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/favicon.svg"/>
       </Head>
-      <main className={`${outfit.variable} font-sans`}>
+      <main className={`${outfit.variable} font-sans `}>
     <Navbar/>
      <Hero data={hero}/>
      <Features data={features}/>

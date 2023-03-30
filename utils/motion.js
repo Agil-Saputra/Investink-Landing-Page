@@ -3,8 +3,8 @@ export const container = () =>  ({
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.5,
+        delayChildren: 0.1,
+        staggerChildren: 0.2,
       },
     },
   });
@@ -19,7 +19,7 @@ export const container = () =>  ({
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 0.5,
+        duration: 0.2,
         delay,
       },
     },
@@ -34,7 +34,7 @@ export const container = () =>  ({
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 0.5,
+        duration: 0.2,
         delay,
       },
     },
@@ -59,5 +59,5 @@ export const container = () =>  ({
   export const set = {
     initial:"hidden",
     whileInView:"show",
-    viewport: {once: true, amount: 0.4}
+    viewport: {once: true}
   }
